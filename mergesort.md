@@ -4,7 +4,7 @@
 class Solution:
     def sortArray(self, nums: List[int]) -> List[int]:
         def merge(a, b):
-            length_a = len(a)
+            length_a = len(a) #faster than repetitively computing len(a)/len(b)
             length_b = len(b)
             index_a = 0
             index_b = 0
@@ -12,7 +12,7 @@ class Solution:
             output_array = []
             for i in range(length_a+length_b):
                 if index_a == length_a:
-                    while index_b < length_b:
+                    while index_b < length_b: #could also use np.concatenate, this is faster
                         output_array.append(b[index_b])
                         index_b+=1
                     break
