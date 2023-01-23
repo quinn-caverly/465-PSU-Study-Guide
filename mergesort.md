@@ -52,20 +52,7 @@ class Solution:
                 current2 = current2.next
 
             cur = return_head
-            while True:
-                if current1 == None:
-                    while current2 != None:
-                        cur.next = current2
-                        cur = cur.next
-                        current2 = current2.next
-                    break
-                if current2 == None:
-                    while current1 != None:
-                        cur.next = current1
-                        cur = cur.next
-                        current1 = current1.next
-                    break
-
+            while current1 != None and current2 != None:
                 if current1.val <= current2.val:
                     cur.next = current1
                     cur = cur.next
@@ -74,6 +61,12 @@ class Solution:
                     cur.next = current2
                     cur = cur.next
                     current2 = current2.next
+
+            if current1 == None:
+                cur.next = current2
+            else:
+                cur.next = current1
+                
             return return_head
 
         def calcHalfLength(head):
