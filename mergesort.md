@@ -69,7 +69,7 @@ class Solution:
                 
             return return_head
 
-        def calcHalfLength(head):
+        def calcHalfLength(head): #this could be quickened by counting by 2 instead of one, n -> n/2
             current=head
             count=0
             while current:
