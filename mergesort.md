@@ -1,5 +1,5 @@
 
-
+https://leetcode.com/problems/sort-an-array/
 ```python
 class Solution:
     def sortArray(self, nums: List[int]) -> List[int]:
@@ -40,6 +40,7 @@ class Solution:
         return mergesort(nums)
 ```
 
+https://leetcode.com/problems/sort-list/
 ```python
 class Solution:
     def sortList(self, head: Optional[ListNode]) -> Optional[ListNode]:
