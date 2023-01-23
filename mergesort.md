@@ -1,7 +1,6 @@
 
 
-'''python
-
+```python
 class Solution:
     def sortArray(self, nums: List[int]) -> List[int]:
         def merge(a, b):
@@ -39,4 +38,4 @@ class Solution:
                 return nums
 
         return mergesort(nums)
-'''
+```
