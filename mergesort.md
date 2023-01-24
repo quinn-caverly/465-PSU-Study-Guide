@@ -2,6 +2,14 @@
 https://leetcode.com/problems/sort-an-array/
 
 <details><summary>Does not work</summary>
+class Solution:
+    def sortArray(self, nums: List[int]) -> List[int]:
+        def merge(a, b):
+            length_a = len(a) #faster than repetitively computing len(a)/len(b)
+            length_b = len(b)
+            index_a = 0
+            index_b = 0
+</details>
 ```python
 class Solution:
     def sortArray(self, nums: List[int]) -> List[int]:
@@ -41,8 +49,6 @@ class Solution:
 
         return mergesort(nums)
 ```
-</details>
-
 
 https://leetcode.com/problems/sort-list/
 ```python
