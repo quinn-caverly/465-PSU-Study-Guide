@@ -44,6 +44,9 @@ class Solution:
         return mergesort(nums)
 ```
 </details>
+    
+    ---
+
 
 https://leetcode.com/problems/sort-list/
 ```python
