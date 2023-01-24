@@ -1,5 +1,9 @@
 
 https://leetcode.com/problems/sort-an-array/
+
+<details>
+<summary>Basic Mergesort Implementation on Integer Array</summary>
+<br>
 ```python
 class Solution:
     def sortArray(self, nums: List[int]) -> List[int]:
@@ -39,6 +43,7 @@ class Solution:
 
         return mergesort(nums)
 ```
+</details>
 
 https://leetcode.com/problems/sort-list/
 ```python
