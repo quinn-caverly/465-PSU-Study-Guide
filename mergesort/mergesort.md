@@ -9,6 +9,8 @@ https://leetcode.com/problems/sort-an-array/
 [solution](./solutions/sort-an-array.py)
 </details>
 
+---
+
 <details open>
 <summary>
 Sorting two originally unsorted linked lists.
@@ -18,6 +20,8 @@ https://leetcode.com/problems/sort-list/
 
 [solution](./solutions/sort-list.py))
 </details>
+
+---
 
 <details open>
 <summary>
