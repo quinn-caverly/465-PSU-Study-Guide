@@ -10,6 +10,7 @@ class Solution:
             index_a = 0
             index_b = 0
 </details>
+
 ```python
 class Solution:
     def sortArray(self, nums: List[int]) -> List[int]:
