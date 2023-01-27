@@ -11,5 +11,5 @@ Week #2:
 Week #3:
  - Mergesort
  
-  [mergesort](.mergesort/mergesort.md)
+  [mergesort](mergesort/mergesort.md)
 
