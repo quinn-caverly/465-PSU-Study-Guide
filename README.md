@@ -2,12 +2,9 @@
 
 CMPSC 465 at PSU is a non-coding class.
 
-Week #1:
- Fibonacci algorithm
-
 Week #2:
-  Divide and Conquer
+  divide and conquer (see mergesort + median finding)
  
 Week #3:
-  [mergesort](mergesort/mergesort.md)
+  [mergesort](mergesort/mergesort.md) 🟧🟧🟥
 
