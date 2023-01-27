@@ -2,6 +2,8 @@
 
 CMPSC 465 at PSU is a non-coding class.
 
+Week #1: [fibonacci](fibonacci.md) 🟩
+
 Week #2:
   divide and conquer (see mergesort + median finding)
  
