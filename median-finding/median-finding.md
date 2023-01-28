@@ -1,4 +1,3 @@
-
 🟧 Bucket method to find kth largest element. (lecture covered the process for finding kth smallest): https://leetcode.com/problems/kth-largest-element-in-an-array
 
 ```python
@@ -39,3 +38,22 @@ class Solution:
             
         return go()
   ```
+
+🟧 Max subarry problem which was covered in lecture: https://leetcode.com/problems/maximum-subarray
+
+first solution which I did prior to the class, solves in one iteration of the array, beats 98% of solutions on leetcode
+```python
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+        current = nums[0]
+        max_val = nums[0]
+        for i in nums[1::]:
+            if current+i<i: #if we gain nothing by increasing the size of the array
+                current = i
+            else:
+                current += i
+            if current > max_val:
+                max_val = current
+        return max_val
+```
+
