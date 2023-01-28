@@ -38,6 +38,7 @@ class Solution:
             
         return go()
   ```
+  ---
 
 🟧 Max subarry problem which was covered in lecture: https://leetcode.com/problems/maximum-subarray
 
