@@ -42,7 +42,7 @@ class Solution:
 
 🟧 Max subarry problem which was covered in lecture: https://leetcode.com/problems/maximum-subarray
 
-first solution which I did prior to the class, solves in one iteration of the array, beats 98% of solutions on leetcode
+first solution which I did prior to the class, solves in one iteration of the array, beats 98% of solutions on leetcode (apparently this is called Kadane's algorithm, can't be used for lecture problem because problem shown in lecture actually returns the sub-array not the max value)
 ```python
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
