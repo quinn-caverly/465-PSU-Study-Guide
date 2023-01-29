@@ -8,5 +8,6 @@ Week 2:
   divide and conquer (see mergesort + median finding)
  
 Week 3:
-  [mergesort](mergesort/mergesort.md) 🟧🟧🟥
+  [mergesort](mergesort/mergesort.md) 🟧🟧🟥,   [median-finding and kth smallest/largest element](median-finding/median-finding.md) 🟧🟧
+
 
