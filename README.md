@@ -1,4 +1,4 @@
-# CMPSC-465-DS-Algos-Study-Guide-Penn-State
+# 465 at PSU (Data Structures and Algorithms) Study Guide
 
 CMPSC 465 at PSU is a non-coding class. These are applied problems which correspond to material and problems covered in lecture which are explored using only pseudocode (Also includes problems which increase depth of understanding of course concepts, usually delineated by 🟥).
 
