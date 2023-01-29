@@ -1,4 +1,4 @@
-https://leetcode.com/problems/fibonacci-number
+🟩Trivial dynamic programming application: https://leetcode.com/problems/fibonacci-number
 ```python
 class Solution:
     def fib(self, n: int) -> int:
