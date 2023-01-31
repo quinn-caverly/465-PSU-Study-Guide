@@ -1,4 +1,4 @@
-🟧 Basic insertion sort with linked list (this could have been coded more elegantly): https://leetcode.com/problems/insertion-sort-list
+🟧 Basic insertion sort with linked list: https://leetcode.com/problems/insertion-sort-list
 
 ```python
 class Solution:
