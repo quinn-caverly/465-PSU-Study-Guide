@@ -5,7 +5,7 @@ CMPSC 465 at PSU is a non-coding class. These are applied problems which corresp
 Week 1: [fibonacci](fibonacci.md) 🟩
 
 Week 2:
-  divide and conquer (see mergesort + median finding)
+  [divide-and-conquer](divide-and-conquer/divide-and-conquer.md) 🟥 (see also mergesort + median finding)
  
 Week 3:
   [mergesort](mergesort/mergesort.md) 🟧🟧🟥,   [median finding and kth smallest/largest element](median-finding/median-finding.md) 🟧🟧, [insertion sort](insertion-sort/insertion-sort.md) 🟧
