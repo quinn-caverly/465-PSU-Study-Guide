@@ -5,19 +5,15 @@
 class Solution:
     def isPossible(self, n: int, edges: List[List[int]]) -> bool:
         #generate standard adjacency list for simple, undirected graph
-        adjacency_list = {}
-        for i in range(1, n+1):
-            adjacency_list[i] = []
+        adjacency_list = {x: [] for x in range(1, n+1)}
+        
         for a, b in edges:
             adjacency_list[a].append(b)
             adjacency_list[b].append(a)
 
         #collects nodes which have an odd degree
-        odd_adjacency_list = {}
-        for key, value in adjacency_list.items():
-            if len(value)%2!=0:
-                odd_adjacency_list[key] = value
-
+        odd_adjacency_list = dict(filter(lambda x: len(x[1])%2!=0, adjacency_list.items()))
+        
         size = len(odd_adjacency_list)
 
         if size==0:
@@ -34,11 +30,10 @@ class Solution:
                     if a not in value and b not in value:
                         return True              
 
-            else: #because we are only allowed 2 extra edges, they have to connect to each other somehow, 3 possiblities for this
+            else: #because we are only allowed 2 extra edges, they have to connect to each other somehow, 3 possiblities
                 c, d = key_list[2], key_list[3]
-                def canBeValid(a, b):
-                    if a not in odd_adjacency_list[b] and b not in odd_adjacency_list[a]:
-                        return True
+                
+                canBeValid = lambda a, b: a not in odd_adjacency_list[b] and b not in odd_adjacency_list[a]
 
                 if canBeValid(a, b) and canBeValid(c, d):
                     return True
