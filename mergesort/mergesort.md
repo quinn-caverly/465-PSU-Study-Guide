@@ -133,10 +133,8 @@ class Solution:
             return head
 
         #handles edge cases where lists are None, etc.
-        queue = []
-        for i in lists:
-            if i != None:
-                queue.append(i)
+        queue = list(filter(lambda x: x!=None , lists))
+
         if len(queue) == 0:
             return None
 
