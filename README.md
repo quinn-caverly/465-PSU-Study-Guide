@@ -11,6 +11,6 @@ Week 3:
   [mergesort](mergesort/mergesort.md) 🟧🟧🟥,   [median finding and kth smallest/largest element](median-finding/median-finding.md) 🟧🟧, [insertion sort](insertion-sort/insertion-sort.md) 🟧
   
 Week 4:
-  [graphs](graphs/graphs.md) 🟥
+  [graphs](graphs/graphs.md) 🟥, depth first search
 
 
