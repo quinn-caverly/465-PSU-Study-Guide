@@ -12,5 +12,11 @@ Week 3:
   
 Week 4:
   [graphs](graphs/graphs.md) 🟥, depth first search
+  
+Week 5:
+  dfs continued, exam week
+  
+Week 6:
+  linearization, connectivity in digraphs, breadth first search
 
 
