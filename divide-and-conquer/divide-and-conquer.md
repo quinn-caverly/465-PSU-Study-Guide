@@ -58,3 +58,23 @@ class Solution:
 
         return return_sum
 ```
+
+---
+
+🟥 https://leetcode.com/problems/count-of-smaller-numbers-after-self
+
+```python
+class Solution:
+    def countSmaller(self, nums: List[int]) -> List[int]:
+        sorted_list = [nums[-1]]
+        deq = deque([0]) #allows for O(1) inserts when adding to left or right ends
+
+        i = len(nums)-2
+        while i >= 0:
+            insert_pos = bisect_left(sorted_list,nums[i]) #uses binary search to find insertion point: https://github.com/python/cpython/blob/main/Lib/bisect.py
+            sorted_list.insert(insert_pos, nums[i])
+            deq.appendleft(insert_pos)
+            i-=1
+
+        return deq
+```
