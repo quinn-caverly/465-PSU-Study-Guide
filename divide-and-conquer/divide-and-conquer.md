@@ -78,3 +78,23 @@ class Solution:
 
         return deq
 ```
+
+---
+
+🟥 https://leetcode.com/problems/reverse-pairs/
+
+```python
+class Solution:
+    def reversePairs(self, nums: List[int]) -> int:
+        #we will use a sorted array and use binary search on that array in order to find the number of pairs for any i
+        sorted_array = [nums[-1]]
+        pairs = 0
+
+        i = len(nums)-2
+        while i >= 0:
+            pairs += bisect_left(sorted_array, nums[i]/2) #https://github.com/python/cpython/blob/main/Lib/bisect.py
+            insort_right(sorted_array, nums[i])
+            i-=1
+
+        return pairs
+```
