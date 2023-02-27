@@ -20,3 +20,37 @@ class Solution:
             
         return dfs(root)
 ```
+
+---
+
+🟧 https://leetcode.com/problems/path-sum-ii
+```python
+class Solution:
+    def pathSum(self, root: Optional[TreeNode], targetSum: int) -> List[List[int]]:
+
+        output_array = []
+
+        def dfs(node, path):
+            path = path.copy()
+            path.append(node.val)
+
+            if node.left == None and node.right == None:
+                print(path)
+                if sum(path) == targetSum:
+                    nonlocal output_array
+                    output_array.append(path)
+            
+            if node.left != None:
+                dfs(node.left, path)
+
+            if node.right != None:
+                dfs(node.right, path)
+
+        
+        if root == None:
+            return []
+
+        dfs(root, [])
+
+        return output_array
+```
