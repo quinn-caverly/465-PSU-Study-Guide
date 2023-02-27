@@ -54,3 +54,34 @@ class Solution:
 
         return output_array
 ```
+
+---
+
+🟧 https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
+```python
+class Solution:
+    def flatten(self, root: Optional[TreeNode]) -> None:
+        """
+        Do not return anything, modify root in-place instead.
+        """
+
+        #take left child of the node, put it in the right position
+        #then, put the previous right node as the right child of the rightmost node of original left child
+        def flop(node):
+            if node == None: return
+
+            if node.left != None:
+                rightPointer = node.right
+                node.right = node.left
+
+                cur = node.right
+                while cur.right != None:
+                    cur = cur.right
+
+                cur.right = rightPointer
+                node.left = None
+
+            flop(node.right)
+
+        flop(root)
+```
