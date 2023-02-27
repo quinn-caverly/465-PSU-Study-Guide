@@ -11,10 +11,10 @@ Week 3:
   [mergesort](mergesort/mergesort.md) 🟧🟧🟥,   [median finding and kth smallest/largest element](median-finding/median-finding.md) 🟧🟧, [insertion sort](insertion-sort/insertion-sort.md) 🟧
   
 Week 4:
-  [graphs](graphs/graphs.md) 🟥, depth first search
+  [graphs](graphs/graphs.md) 🟥, begin dfs
   
 Week 5:
-  dfs continued, exam week
+  [depth first search](depth-first-search/dfs.md) 🟧🟧, exam week
   
 Week 6:
   linearization, connectivity in digraphs, breadth first search
