@@ -65,8 +65,8 @@ class Solution:
         Do not return anything, modify root in-place instead.
         """
 
-        #take left child of the node, put it in the right position
-        #then, put the previous right node as the right child of the rightmost node of original left child
+        # take left child of the node, put it in the right position
+        # then, put the previous right node as the right child of the rightmost node of original left child
         def flop(node):
             if node == None: return
 
